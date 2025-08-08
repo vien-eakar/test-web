@@ -3,256 +3,792 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tally.so: The Easiest & Most Powerful Free Form Builder | Create Online Forms, Surveys & Quizzes</title>
-    <meta name="description" content="Build any type of online form, survey, quiz, or application with Tally.so – absolutely free, no code required, unlimited responses. Upgrade for custom domains & advanced features!">
-    <meta name="keywords" content="free form builder, online forms, survey tool, quiz maker, no-code forms, Tally.so alternative, best form builder, form creator, questionnaire, feedback forms, application forms, payment forms">
-
-    <meta property="og:title" content="Tally.so: The Easiest & Most Powerful Free Form Builder">
-    <meta property="og:description" content="Build any type of online form, survey, quiz, or application with Tally.so – absolutely free, no code required, unlimited responses. Upgrade for custom domains & advanced features!">
-    <meta property="og:image" content="https://tally.so/images/meta.png"> <meta property="og:url" content="https://yourdomain.com"> <meta property="og:type" content="website">
-    <meta name='impact-site-verification' value='ca2adfa7-c168-4142-8bf8-1c9a0ca5eb54'>
-
-    <link rel="icon" href="https://tally.so/favicon.ico" type="image/x-icon">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="style.css">
+    <title>Premium Tally Solutions | Streamline Your Accounting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #10b981;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gray: #94a3b8;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        
+        .cta-button {
+            background-color: var(--primary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .cta-button:hover {
+            background-color: var(--primary-dark);
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 150px 0 80px;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+        
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            color: var(--gray);
+        }
+        
+        .hero-image {
+            max-width: 800px;
+            margin: 40px auto 0;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Benefits Section */
+        .benefits {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .benefit-card {
+            background-color: var(--light);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .benefit-icon {
+            font-size: 40px;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .benefit-card h3 {
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background-color: #f8fafc;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-image {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .service-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .service-content {
+            padding: 25px;
+        }
+        
+        .service-content h3 {
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+        
+        .service-content ul {
+            list-style-type: none;
+        }
+        
+        .service-content li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .service-content li:before {
+            content: "✓";
+            color: var(--secondary);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .testimonial-card {
+            background-color: var(--light);
+            padding: 30px;
+            border-radius: 10px;
+            position: relative;
+        }
+        
+        .testimonial-card:before {
+            content: """;
+            font-size: 80px;
+            color: var(--primary);
+            opacity: 0.1;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-family: serif;
+            line-height: 1;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+        }
+        
+        .testimonial-company {
+            color: var(--gray);
+            font-size: 14px;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            margin-bottom: 20px;
+            font-size: 36px;
+        }
+        
+        .cta-section p {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            opacity: 0.9;
+        }
+        
+        .cta-features {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .cta-feature {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .cta-feature i {
+            font-size: 20px;
+            color: var(--secondary);
+        }
+        
+        .cta-button-large {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        
+        .cta-button-large:hover {
+            background-color: #0d9b6c;
+        }
+        
+        /* FAQ Section */
+        .faq {
+            padding: 80px 0;
+            background-color: #f8fafc;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .faq-question {
+            padding: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-question:after {
+            content: "+";
+            font-size: 20px;
+            color: var(--primary);
+        }
+        
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s, padding 0.3s;
+        }
+        
+        .faq-item.active .faq-question:after {
+            content: "-";
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 0 20px 20px;
+            max-height: 300px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 60px 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        
+        .footer-links {
+            list-style-type: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: var(--gray);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .trust-badges {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .trust-badge {
+            background-color: rgba(255,255,255,0.1);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: var(--gray);
+            font-size: 14px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .section-title h2 {
+                font-size: 28px;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17374749512"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17374749512');
-</script>
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <!-- Header -->
+    <header>
         <div class="container">
-            <a class="navbar-brand" href="https://tally.so">
-                <img src="./images/tally_favicon.ico" alt="Tally.so Logo" height="30">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#features">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://tally.so/pricing?productId=tally.so&ucc=bVtrxObHi12&celloN=Vmllbg">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://tally.so/help/integrations/?productId=tally.so&ucc=bVtrxObHi12&celloN=Vmllbg">Integrations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-primary ms-lg-2" href="https://tally.cello.so/bVtrxObHi12" target="_blank" rel="noopener noreferrer">Sign Up Free</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <header class="hero-section text-center py-5 py-lg-8 bg-light-gradient">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-7 mx-auto">
-                    <h1 class="display-3 fw-bold text-dark mb-4 animated-text">
-                        The Easiest Way to Create Any Form, <span class="text-primary">Absolutely Free.</span>
-                    </h1>
-                    <p class="lead text-muted mb-5">
-                        Build powerful online forms, surveys, quizzes, and more – no coding, unlimited responses, seamless integrations. Get started in seconds!
-                    </p>
-                    <a href="https://tally.cello.so/bVtrxObHi12" class="btn btn-primary btn-lg shadow-lg animate__animated animate__pulse animate__infinite" target="_blank" rel="noopener noreferrer">
-                        Start Building Forms For Free!
-                    </a>
-                    <p class="mt-3 text-sm text-muted">No credit card required. Forever free plan available.</p>
+            <nav>
+                <div class="logo">Tally<span>Pro</span></div>
+                <div class="nav-links">
+                    <a href="#services">Services</a>
+                    <a href="#benefits">Benefits</a>
+                    <a href="#testimonials">Testimonials</a>
+                    <a href="#faq">FAQ</a>
                 </div>
-            </div>
-            <div class="row mt-5">
-                <div class="col-12">
-                    <img src="./images/strategy.png" alt="Tally.so Dashboard Screenshot" class="img-fluid rounded shadow-lg border border-light" style="max-height: 500px; object-fit: cover;">
-                </div>
-            </div>
+                <a href="#contact" class="cta-button">Get Started</a>
+            </nav>
         </div>
     </header>
 
-    <section id="features" class="py-5 py-lg-8 bg-white">
+    <!-- Hero Section -->
+    <section class="hero">
         <div class="container">
-            <h2 class="text-center display-4 fw-bold mb-5">Why Tally.so is Your Go-To Form Builder</h2>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm border-0 feature-card">
-                        <div class="card-body text-center p-4">
-                            <i class="bi bi-magic feature-icon text-primary mb-3"></i>
-                            <h3 class="card-title h5 fw-bold mb-3">Effortless Creation, Zero Code</h3>
-                            <p class="card-text text-muted">
-                                Simply type to create your forms. Our intuitive drag-and-drop interface makes form building as easy as writing a document. No technical skills needed.
-                            </p>
-                        </div>
+            <h1>Streamline Your Finances with Expert Tally Services</h1>
+            <p>Get customized Tally solutions, seamless integration, and 24/7 expert support to optimize your accounting workflow.</p>
+            <a href="#contact" class="cta-button">Get a Free Consultation Now</a>
+            
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Tally accounting dashboard">
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Our Tally Services?</h2>
+                <p>We provide comprehensive solutions to transform your accounting experience</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Custom Tally Solutions</h3>
+                    <p>Tailored to your specific business needs and workflows</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Seamless Data Migration</h3>
+                    <p>Move from legacy systems effortlessly without data loss</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Automated Reports</h3>
+                    <p>Get real-time financial insights with customized dashboards</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Dedicated Support</h3>
+                    <p>24/7 assistance from certified Tally experts</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Tally Services</h2>
+                <p>Comprehensive solutions for all your accounting needs</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Tally implementation">
+                    </div>
+                    <div class="service-content">
+                        <h3>Tally Implementation & Setup</h3>
+                        <ul>
+                            <li>New software setup and configuration</li>
+                            <li>Company data migration</li>
+                            <li>Multi-user access setup</li>
+                            <li>Initial training for your team</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm border-0 feature-card">
-                        <div class="card-body text-center p-4">
-                            <i class="bi bi-infinity feature-icon text-primary mb-3"></i>
-                            <h3 class="card-title h5 fw-bold mb-3">Truly Unlimited & Forever Free</h3>
-                            <p class="card-text text-muted">
-                                Unlike others, Tally.so offers unlimited forms, unlimited responses, and unlimited users on its free plan. Experience full power without hidden costs.
-                            </p>
-                        </div>
+                
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Tally customization">
+                    </div>
+                    <div class="service-content">
+                        <h3>Tally Customization & Automation</h3>
+                        <ul>
+                            <li>Custom invoice templates</li>
+                            <li>Automated payroll processing</li>
+                            <li>GST/VAT compliance updates</li>
+                            <li>Integration with other systems</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm border-0 feature-card">
-                        <div class="card-body text-center p-4">
-                            <i class="bi bi-boxes feature-icon text-primary mb-3"></i>
-                            <h3 class="card-title h5 fw-bold mb-3">Seamless Integrations</h3>
-                            <p class="card-text text-muted">
-                                Connect your forms to hundreds of popular tools like Notion, Slack, Google Sheets, Zapier, and more. Automate your workflows effortlessly.
-                            </p>
-                        </div>
+                
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Tally training">
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm border-0 feature-card">
-                        <div class="card-body text-center p-4">
-                            <i class="bi bi-shield-check feature-icon text-primary mb-3"></i>
-                            <h3 class="card-title h5 fw-bold mb-3">Secure & Reliable Data Collection</h3>
-                            <p class="card-text text-muted">
-                                Your data is safe with Tally.so. We ensure top-tier security and reliability so you can focus on collecting the insights you need.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm border-0 feature-card">
-                        <div class="card-body text-center p-4">
-                            <i class="bi bi-palette feature-icon text-primary mb-3"></i>
-                            <h3 class="card-title h5 fw-bold mb-3">Beautiful & Customizable Designs</h3>
-                            <p class="card-text text-muted">
-                                Make your forms match your brand. Customize colors, fonts, and add your logo to create professional and engaging forms.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm border-0 feature-card">
-                        <div class="card-body text-center p-4">
-                            <i class="bi bi-graph-up feature-icon text-primary mb-3"></i>
-                            <h3 class="card-title h5 fw-bold mb-3">Powerful Logic & Analytics</h3>
-                            <p class="card-text text-muted">
-                                Implement conditional logic to create dynamic forms. Track responses, analyze data, and gain valuable insights with built-in analytics.
-                            </p>
-                        </div>
+                    <div class="service-content">
+                        <h3>Tally Training & Support</h3>
+                        <ul>
+                            <li>On-site/remote training sessions</li>
+                            <li>Troubleshooting & error fixes</li>
+                            <li>Priority customer support</li>
+                            <li>Regular software updates</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="cta-premium-section py-5 py-lg-8 bg-primary text-white text-center">
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
         <div class="container">
-            <h2 class="display-5 fw-bold mb-4">Unlock Even More Power with Tally.so Pro</h2>
-            <p class="lead mb-5 max-w-lg mx-auto">
-                While Tally.so is incredibly powerful for free, upgrade to Pro for custom domains, team collaboration, removing Tally.so branding, priority support, and much more!
-            </p>
-            <a href="https://tally.so/pricing?productId=tally.so&ucc=bVtrxObHi12&celloN=Vmllbg" class="btn btn-light btn-lg shadow-lg animate__animated animate__fadeInUp" target="_blank" rel="noopener noreferrer">
-                Explore Pro Features & Pricing
-            </a>
-        </div>
-    </section>
-
-    <section class="testimonials-section py-5 py-lg-8 bg-light">
-        <div class="container">
-            <h2 class="text-center display-4 fw-bold mb-5">What Our Users Say</h2>
-            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="testimonial-card p-4 mx-auto text-center">
-                            <p class="fst-italic text-muted mb-3">
-                                "Tally.so is a game-changer! I've been looking for a simple yet powerful form builder for ages, and this is it. The free tier is incredibly generous."
-                            </p>
-                            <footer class="blockquote-footer">Jane Doe, <cite title="Source Title">Small Business Owner</cite></footer>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="testimonial-card p-4 mx-auto text-center">
-                            <p class="fst-italic text-muted mb-3">
-                                "Moving from Typeform to Tally.so was the best decision. All the features I needed, without the hefty price tag. Plus, it's so intuitive!"
-                            </p>
-                            <footer class="blockquote-footer">John Smith, <cite title="Source Title">Marketing Manager</cite></footer>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="testimonial-card p-4 mx-auto text-center">
-                            <p class="fst-italic text-muted mb-3">
-                                "The integration with Notion saved me hours. Tally.so just works, and it's fantastic for collecting student feedback."
-                            </p>
-                            <footer class="blockquote-footer">Emily White, <cite title="Source Title">Educator</cite></footer>
-                        </div>
-                    </div>
+            <div class="section-title">
+                <h2>What Our Clients Say</h2>
+                <p>Trusted by businesses worldwide</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Switching to their Tally services saved us 20+ hours monthly. The implementation was seamless and their support team is always available when we need help.</p>
+                    <div class="testimonial-author">Sarah Johnson</div>
+                    <div class="testimonial-company">CFO, Retail Solutions Inc.</div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">The team helped us automate our entire accounting process. The customization options have transformed how we manage our finances. Flawless service!</p>
+                    <div class="testimonial-author">Michael Chen</div>
+                    <div class="testimonial-company">Director, TechStart Ltd.</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">As a manufacturing firm with complex inventory needs, their Tally customization has been a game-changer. Highly recommended for any business using Tally.</p>
+                    <div class="testimonial-author">David Wilson</div>
+                    <div class="testimonial-company">Operations Manager, IndusFab</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="final-cta-section py-5 py-lg-8 bg-white text-center">
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
         <div class="container">
-            <h2 class="display-4 fw-bold mb-4">Ready to Build Your Perfect Form?</h2>
-            <p class="lead mb-5 max-w-lg mx-auto">
-                Join thousands of users who trust Tally.so for their online forms. It's fast, free, and incredibly powerful.
-            </p>
-            <a href="https://tally.cello.so/bVtrxObHi12" class="btn btn-primary btn-lg shadow-lg animate__animated animate__fadeInUp" target="_blank" rel="noopener noreferrer">
-                Get Started with Tally.so Free
-            </a>
+            <h2>Ready to Transform Your Accounting with Tally?</h2>
+            <p>Join hundreds of businesses that have streamlined their financial operations with our expert Tally services</p>
+            
+            <div class="cta-features">
+                <div class="cta-feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Free 30-Min Consultation</span>
+                </div>
+                <div class="cta-feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>No-Risk 14-Day Trial</span>
+                </div>
+                <div class="cta-feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>24/7 Expert Support</span>
+                </div>
+            </div>
+            
+            <a href="#contact-form" class="cta-button-large">Book a Free Call Now</a>
         </div>
     </section>
 
-    <footer class="bg-dark text-white-50 py-4">
-        <div class="container text-center text-md-start">
-            <div class="row">
-                <div class="col-md-6 mb-3 mb-md-0">
-                    <div class="image-wrapper">
-                        <img src="./images/logo_v2.png" alt="Tally.so Logo White" height="25" class="mb-2">
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about our Tally services</p>
+            </div>
+            
+            <div class="faq-items">
+                <div class="faq-item">
+                    <div class="faq-question">Do you offer Tally customization for specific industries?</div>
+                    <div class="faq-answer">
+                        <p>Yes! We specialize in tailoring Tally solutions for various industries including retail, manufacturing, healthcare, education, and professional services. Our team understands the unique accounting needs of different sectors.</p>
                     </div>
-                    <p class="small">The simplest way to create any form.</p>
                 </div>
-                <div class="col-md-3 mb-3 mb-md-0">
-                    <h5 class="text-white">Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="https://tally.so/pricing?productId=tally.so&ucc=bVtrxObHi12&celloN=Vmllbg" class="text-white-50 text-decoration-none">Pricing</a></li>
-                        <li><a href="https://tally.so/templates/?productId=tally.so&ucc=bVtrxObHi12&celloN=Vmllbg" class="text-white-50 text-decoration-none">Templates</a></li>
-                        <li><a href="https://tally.so/help/integrations/?productId=tally.so&ucc=bVtrxObHi12&celloN=Vmllbg" class="text-white-50 text-decoration-none">Integrations</a></li>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How long does Tally implementation take?</div>
+                    <div class="faq-answer">
+                        <p>Implementation typically takes 2-5 days depending on your business size and complexity. Small businesses can often be set up in 1-2 days, while larger enterprises with complex requirements may need up to a week.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Is remote support available?</div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We assist clients worldwide via Zoom, TeamViewer, and other remote support tools. Our team is available across multiple time zones to provide timely assistance whenever you need it.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What if we need training for our staff?</div>
+                    <div class="faq-answer">
+                        <p>We provide comprehensive training packages tailored to your team's skill levels. Training can be conducted on-site or remotely, and we offer follow-up sessions to ensure your staff is comfortable with the system.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do you handle data security?</div>
+                    <div class="faq-answer">
+                        <p>Data security is our top priority. We implement industry-standard encryption for all data transfers, conduct regular backups, and follow strict access control protocols. For cloud implementations, we use only certified data centers with robust security measures.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>TallyPro</h3>
+                    <p>Premium Tally solutions for businesses of all sizes. Streamline your accounting and unlock new efficiencies.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Tally Implementation</a></li>
+                        <li><a href="#">Customization</a></li>
+                        <li><a href="#">Training</a></li>
+                        <li><a href="#">Support</a></li>
                     </ul>
                 </div>
-                <div class="col-md-3">
-                    <h5 class="text-white">Contact</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="mailto:viennguyen.it.admob@gmail.com" class="text-white-50 text-decoration-none">Email</a></li>
+                
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="mailto:hello@tallypro.com">hello@tallypro.com</a></li>
+                        <li><a href="tel:+11234567890">+1 (123) 456-7890</a></li>
+                        <li>123 Business Ave, Suite 500</li>
+                        <li>New York, NY 10001</li>
                     </ul>
                 </div>
             </div>
-            <hr class="my-4 border-secondary">
-            <div class="text-center">
-                <p class="mb-0 small">&copy; 2025 Tally.so Landing Page. All rights reserved.</p>
-                <p class="mb-0 small">Built with <span class="text-danger">&hearts;</span> by wepicknbuy.</p>
+            
+            <div class="trust-badges">
+                <div class="trust-badge">500+ Businesses Served</div>
+                <div class="trust-badge">ISO 27001 Certified</div>
+                <div class="trust-badge">24/7 Support</div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 TallyPro. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script>
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentNode;
+                item.classList.toggle('active');
+                
+                // Close other open items
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
